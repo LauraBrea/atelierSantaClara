@@ -1,0 +1,136 @@
+
+/*--------- One Card ---------*/
+
+.cards1__box {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 120px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;}
+
+.cards1 {
+    width: auto;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 400px; }
+
+
+/*--------- Two Cards ---------*/
+
+.cards2__box {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 120px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;}
+
+.cards2 {
+    width: auto;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 50px;}
+
+
+/*--------- Cards Packs ---------*/
+
+.card__price {
+    width: 100%;
+    height: 100px;
+    text-align: center; }
+
+.card__price h5 {
+    font-size: 40px;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 35px;}
+
+
+/*--------- Hero Packs ---------*/
+
+.herotxt__box p {
+    max-width: 300px;
+    height: auto;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;}
+
+
+/*--------- Carrousel Packs -------*/
+
+.carrousel__title {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    text-align: center;}
+
+.carrousel__title h4 {
+    text-align: center;
+    width: auto;
+    height: auto; 
+    margin-top: 3rem;
+    margin-bottom: 2rem;}
+    
+.carrousel__title p {
+    text-align: center;
+    max-width: 350px;
+    height: auto; 
+    margin: 0 auto;
+    margin-bottom: 130px; }         
+
+
+/*--------- Faq ---------*/
+
+.faq {
+    width:100%;
+    height: auto; }
+
+.faq__title {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    text-align: center;}
+
+.faq__title h4 {
+    text-align: center;
+    width: auto;
+    height: auto; 
+    margin-top: 3rem;
+    margin-bottom: 2rem;}
+    
+.faq__title p {
+    text-align: center;
+    max-width: 350px;
+    height: auto; 
+    margin: 0 auto;
+    margin-bottom: 130px; }   
+
+.faq__box {
+    width: 90%;
+    height: auto;
+    position: relative;
+    margin-left: 5%; }
+
+.faq__item{
+    width: 100%;
+    min-height: 80px;
+    display: grid;
+    grid-template-columns: auto 350px;
+    align-items: center;
+    justify-items: start;}
+
+.faq__item h2 {
+    font-size: 35px; }
+
+.faq__item p {
+    width: 350px; }
+
+.faq__line {
+    width: 100%;
+    height: 1px;
+    background-color: #EBF1F9; }
