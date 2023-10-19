@@ -55,6 +55,14 @@ h1 {
     font-weight: 400;
     line-height: 140px;}
 
+h2 {  
+    color: #61848B;
+    font-family: 'Salted Mocha';
+    font-size: 125px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140px;}
+
 h3 {
     color: #374D51;
     font-family: 'Montserrat';
@@ -121,7 +129,7 @@ ul {
 
 .aLink {
     font-family: 'Montserrat', sans-serif;    
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -134,7 +142,7 @@ ul {
     text-transform: uppercase; }
 
 .aLink:hover{
-    font-size: 17px;
+    font-size: 16px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease; }
 
@@ -210,15 +218,19 @@ button:hover {
 
 /* ----------- Nuestra historia ----------- */
 
+#we{
+    width:100%;
+    height: 100px; 
+    margin: 0;}
+
 .we{
     width:100%;
     height: auto; 
-    margin: 100px 0;}
+    margin: 0;}
 
 .we__box{
     width:100%;
     height: auto;
-    padding-bottom: 110px; 
     text-align: center;}
   
 .we__title{
@@ -230,25 +242,426 @@ button:hover {
     .we__title h5{
         margin-top: 20px;}
 
-.we__txt{
+.we__txt {
     width: max-content;
-    margin: 80px auto;
     height: auto;
     display: grid;
     grid-template-columns: minmax(0,480px) minmax(0,480px);
-    column-gap: 60px; }
+    column-gap: 60px;
+    text-align: center;
+    margin: 0 auto 60px auto; }
 
-    .we__txt p{
-        max-width: 480px;
-        text-align: left; }
+    .we__txt p {
+        width: auto;
+        height: auto;
+        text-align: left;
+        margin-top: 65px;
+        margin-left: 0;}
 
 .we__svg{
-    width: 80%;
-    max-width: 746px;
+    width: 50%;
     height: auto;
-    margin-left: 10%;
+    margin-left: 25%; }
+
+.we__gallery{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    margin-top: 100px;}
+
+    .we__gallery img{
+        width: 100%;
+        height: auto; }
+
+/* ----------- El Salon ----------- */
+
+#location{
+    width:100%;
+    height: 100px; 
+    margin: 0;}
+
+.location{
+    width:100%;
+    height: auto; 
+    margin: 0;}
+
+.location__box{
+    width: 90%;
+    height: auto;
+    padding-bottom: 50px; 
+    text-align: center;
+    margin-left: 5%;}
+  
+.location__title{
+    max-width: 480px;
+    margin: 0 auto;
+    height: auto;
     text-align: center;}
 
-    .we__svg svg{
-        width: auto;
+    .location__title h5{
+        margin-top: 20px;}
+
+.location__img{
+    text-align: right; }
+
+    .location__img img{
+        width: 100%;
+        max-width: 500px;
         height: auto; }
+
+.location__txt {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    column-gap: 80px; 
+    margin-top: 75px;
+    align-items: end;}
+
+    .location__txt h2 {
+        margin-bottom: 45px; }
+
+    .location__txt p {
+        max-width: 465px;
+        height: auto;
+        margin: 40px 0 35px 0; }
+
+/* ----------- La Agenda ----------- */
+
+#timeline{
+    width:100%;
+    height: 100px; 
+    margin: 0;}
+
+.timeline{
+    width:100%;
+    height: auto; 
+    margin: 0;}
+
+.timeline__box{
+    width: 90%;
+    height: auto;
+    padding-bottom: 50px; 
+    text-align: center;
+    margin-left: 5%;}
+
+.timeline__title{
+    max-width: 480px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;}
+
+    .timeline__title h4{
+        margin-top: 40px;}
+
+    .timeline__title h5{
+        margin-top: 20px;}
+
+.timeline__grid {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-template-rows: repeat(minmax(160px,auto));
+    grid-template-areas: ". L one" "two L ." ". L thr" "four L ."
+                ". L five" "six L ."  ". L seven" "eig eig eig";
+    margin-top: 170px; }
+
+    .item__left{
+        min-height: 160px;
+        float: left;
+        text-align: left;
+        padding-left: 30px; 
+        position: relative;
+        justify-items: start;}
+
+        .item__left h3{
+            position: absolute;
+            top: 0px;
+            transform: translateY(-10px); }
+
+        .item__left p{
+            position: absolute;
+            top: 35px;  
+            max-width: 340px;}
+
+        .svgL1 {
+            position: absolute;
+            top: 30px;
+            transform: translateY(-120px); }
+
+        .svgL2 {
+            position: absolute;
+            left: 0px;
+            transform: translateX(-4px);}
+
+    .item__right{
+        min-height: 160px;
+        float: right;
+        text-align: right;
+        position: relative;}
+
+        .item__right h3{
+            position: absolute;
+            top: 0px;
+            right: 30px;
+            transform: translateY(-10px); }
+
+        .item__right p{
+            max-width: 340px;
+            position: absolute;
+            top: 35px;  
+            right: 30px;}
+
+        .svgR1 {
+            position: absolute;
+            top: 30px;
+            transform: translateY(-120px);
+            right: 30px; }
+
+        .svgR2 {
+            position: absolute;
+            right: 0px;
+            transform: translateX(4px);}
+
+    .item__center{
+        height: auto;
+        text-align: center;
+        position: relative;}
+
+        .item__center h3{
+           padding-top: 110px;}
+
+        .item__center p{
+            max-width: 350px;
+            margin: 15px auto 0 auto;}
+
+        .svgC1 {
+            position: absolute;
+            top: 0px;
+            transform: translateY(30px) translateX(-32px);}
+
+        .svgC2 {
+            position: absolute;
+            top: 0px;
+            transform: translateX(-4px);}
+
+    .L{ grid-area: L; background-color: #4A686E;}
+    .one { grid-area: one; }
+    .two { grid-area: two; }    
+    .thr { grid-area: thr; }
+    .four { grid-area: four; }
+    .five { grid-area: five; }
+    .six { grid-area: six; }
+    .seven { grid-area: seven; }
+    .eig { grid-area: eig; }
+
+/* ----------- Los Regalos ----------- */
+
+#gift{
+    width:100%;
+    height: 100px; 
+    margin: 0;}
+
+.gift{
+    width:100%;
+    height: auto; 
+    margin: 0;}
+
+.gift__box{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin-left: 5%;}
+
+.gift__title{
+    max-width: 620px;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;}
+
+    .gift__title h4{
+        margin-top: 60px;}
+
+    .gift__title h5{
+        margin-top: 20px;}
+
+.gift__log {
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 80px auto;
+    text-align: center; }        
+
+.gift__log a img{
+    width: auto;
+    height: 80%;
+    max-height: 80px;
+    object-fit: contain; }    
+    
+.gift__cta{
+    width: 345px;
+    height: 45px;
+    padding-top: 20px;
+    margin: 0 auto;
+    background-color: #B8D5DB;
+    margin-bottom: 100px;}
+
+    .gift__cta h4{
+        color: #374D51;}
+
+/* ----------- Conf Asistencia ----------- */
+
+.counter {
+    width:100%;
+    height: auto; 
+    margin: 0;
+    background-color: #B8D5DB; }
+
+#counter {
+    width:100%;
+    height: 100px; 
+    margin: 0; }
+
+.counter__title {
+    width:100%;
+    height: auto; 
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px; }
+
+    .counter__title  h4{
+        color: #3D6972; }
+
+.counter__txt {
+    max-width: 480px;
+    height: auto; 
+    text-align: center;
+    margin: 50px auto 0px auto; }
+
+    .counter__txt p{
+        color: #3D6972; 
+        margin-bottom: 40px;}
+
+    .counter__txt a button{
+        margin-bottom: 90px;}
+
+    /* Countdown styles */
+    #date-countdown {
+        text-align: center;
+        /* Off-white */
+        padding: 50px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 18px; 
+        color: #3D6972;
+        font-family: 'Gill Sans';
+        font-size: 70px;
+    }
+
+    .countdown-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+
+    #date-countdown span {
+        color: #3D6972;
+        font-family: 'Gill Sans';
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;}
+
+    #date-countdown h6 {
+        color: #3D6972;
+        font-family: 'Montserrat';
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.85px;}
+
+    #date-countdown svg {
+        transform: translateY(-25px);}
+
+/* ----------- Saludo final ----------- */
+
+.final{
+    position: relative;
+    width:100%;
+    height: auto; }
+  
+.final__title{
+    width:100%;
+    height: auto;
+    padding-top: 120px;
+    text-align: center;
+    margin-bottom: 140px;}
+
+    .final__title h4{
+        margin-bottom: 60px;}
+      
+    .final__title svg{
+        margin-top: 40px;}
+
+        .final__svg1{
+            height: auto;
+            width: 40%;
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            transform: translateX(-40%);}
+
+            .final__svg1 svg{
+                height: auto;
+                width: 100%;
+                max-width: 610px; }
+
+        .final__svg2{
+            height: auto;
+            width: 40%;
+            position: absolute;
+            bottom: 0px;
+            right: 0;
+            transform: translateX(40%) translateY(150px);}
+
+            .final__svg2 svg{
+                height: auto;
+                width: 100%;
+                max-width: 450px; }
+
+/* ----------- Footer ----------- */
+
+.footer {
+    width:100%;
+    height: auto;
+    background-color: #3D6972;} 
+
+.footer__title {
+    width:90%;
+    height: auto;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 0;} 
+
+.pR {
+    text-align: left;
+    color: #F3FBFD;
+    font-family: 'Gill Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; } 
+
+.pL {
+    text-align: right;
+    color: #F3FBFD;
+    font-family: 'Gill Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;} 
+
+
