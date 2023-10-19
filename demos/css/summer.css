@@ -99,8 +99,6 @@ p {
     font-weight: 400;
     line-height: normal; }
 
-
-
 /* ------------  NAV ------------------- */
 
 nav {
@@ -180,10 +178,11 @@ button:hover {
     background-size: cover ;}
 
 .hero__box{
-    width:100%;
+    width:90%;
     height: auto;
     padding-top: 90px;
-    padding-bottom: 110px; }
+    padding-bottom: 110px;
+    margin-left: 5%; }
   
 .hero__title{
     width:auto;
@@ -229,7 +228,8 @@ button:hover {
     margin: 0;}
 
 .we__box{
-    width:100%;
+    width:90%;
+    margin-left: 5%;
     height: auto;
     text-align: center;}
   
@@ -317,7 +317,8 @@ button:hover {
     grid-template-columns: 1fr 1.15fr;
     column-gap: 80px; 
     margin-top: 75px;
-    align-items: end;}
+    align-items: end;
+    text-align: left;}
 
     .location__txt h2 {
         margin-bottom: 45px; }
@@ -380,8 +381,7 @@ button:hover {
             transform: translateY(-10px); }
 
         .item__left p{
-            position: absolute;
-            top: 35px;  
+            padding-top: 35px;
             max-width: 340px;}
 
         .svgL1 {
@@ -408,9 +408,9 @@ button:hover {
 
         .item__right p{
             max-width: 340px;
-            position: absolute;
-            top: 35px;  
-            right: 30px;}
+            float: right;
+            padding-right: 30px;
+            padding-top: 35px;  }
 
         .svgR1 {
             position: absolute;
@@ -523,16 +523,16 @@ button:hover {
     margin: 0; }
 
 .counter__title {
-    width:100%;
+    width:90%;
     height: auto; 
     text-align: center;
-    margin-bottom: 40px;
-    margin-top: 30px; }
+    margin: 30px 5% 40px 5%; }
 
     .counter__title  h4{
         color: #3D6972; }
 
 .counter__txt {
+    width: 90%;
     max-width: 480px;
     height: auto; 
     text-align: center;
@@ -593,11 +593,12 @@ button:hover {
     height: auto; }
   
 .final__title{
-    width:100%;
+    width:90%;
     height: auto;
     padding-top: 120px;
     text-align: center;
-    margin-bottom: 140px;}
+    margin-bottom: 140px;
+    margin-left: 5%;}
 
     .final__title h4{
         margin-bottom: 60px;}
@@ -624,7 +625,7 @@ button:hover {
             position: absolute;
             bottom: 0px;
             right: 0;
-            transform: translateX(40%) translateY(150px);}
+            transform: translateX(50%) translateY(150px);}
 
             .final__svg2 svg{
                 height: auto;
@@ -665,3 +666,182 @@ button:hover {
     line-height: 14px;} 
 
 
+/* ================== MEDIA ================== */
+
+@media (max-width: 768px) {
+
+    .nav  {
+        display: none;
+    }
+
+    h1 {  
+        font-size: 120px;
+        line-height: 128px;}
+    
+    h2 {  
+        font-size: 100px;
+        line-height: 110px;}
+    
+    h3 {
+        font-size: 18px;
+        line-height: 21px;}
+    
+    h4 {
+        font-size: 18px;
+        line-height: 21px; }
+    
+    h5 {
+        font-size: 21px; }
+    
+    p {
+        font-size: 21px;  }
+
+    button {
+        font-size: 18px;
+        padding: 20px 40px;}
+        
+    button:hover {    
+        font-size: 18.5px; }
+
+    .hero__box{
+        padding-top: 0; }    
+
+    .we__txt {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin: 0 auto 60px auto; }
+    
+        .we__txt p {
+            width: 100%;
+            margin-top: 35px;
+            text-align: center; }
+    
+    .we__svg{
+        width: 75%;
+        height: auto;
+        margin-left: 12.5%; }
+    
+    .we__gallery{
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(3, 1fr); 
+        margin-bottom: 25px;}
+
+    .location__box{
+        padding-bottom: 30px; }
+
+    .location__img{
+        text-align: center; }
+    
+    .location__txt {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        text-align: center;
+        margin-top: 40px;}
+    
+    .location__txt h2 {
+        margin-top: 75px; }
+
+    .location__txt p {
+        margin: 40px auto 35px auto; }
+
+    .timeline__box{
+        padding-bottom: 30px;}    
+
+    .item__left{
+        min-height: 200px;
+        padding-left: 20px; }
+
+    .item__right{
+        min-height: 200px; }
+        
+        .item__right h3{
+            right: 20px;}
+
+        .item__right p{
+            padding-right: 20px; }
+        
+        .svgR1 {
+            right: 20px; }
+        
+    .gift__log {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 6px;
+        margin: 80px auto 40px auto; }    
+
+    .counter__title {
+        margin-top: 0;}    
+
+    #date-countdown {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-around;
+        font-size: 40px;}
+
+    #date-countdown span {
+        font-size: 60px; }
+
+    #date-countdown h6 {
+        font-size: 12px;}
+
+    #date-countdown svg {
+        display: none;}
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .nav__links li {
+        margin: 1rem; }
+
+    .we__txt {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin: 0 auto 60px auto; }
+    
+        .we__txt p {
+            width: 100%;
+            max-width: 780px;
+            margin-top: 35px; 
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;}
+
+        .we__svg{
+            width: 70%;
+            margin-left: 15%; }
+
+        .location__box{
+            padding-bottom: 30px;
+            padding-top: 40px; }
+    
+        .location__img{
+            text-align: center; }
+        
+        .location__txt {
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto;
+            text-align: center;
+            margin-top: 40px;}
+        
+        .location__txt h2 {
+            margin-top: 75px; }
+    
+        .location__txt p {
+            margin: 40px auto 35px auto; }
+
+}
+
+@media (min-width: 1500px) {
+
+    .we, .location, .timeline, .gift, .final .footer__title  {
+        width:1500px;
+        margin-left: auto;
+        margin-right: auto;  } 
+
+}
