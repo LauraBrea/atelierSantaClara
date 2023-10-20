@@ -47,7 +47,22 @@
                     <h4>21:30 hs</h4>  
                 </div>
                 <div class="hero__btn">
-                    <button>Agendar Evento</button>
+                    <button id="openModalButton">Agendar Evento</button>
+
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="closeModal">&times;</span>
+                            <h3>Agendar evento</h3>
+                            <h5>Desde aquí podras configurar el recordatorio de la boda, dependiendo de la plataforma que utilices.</h5>
+                            <div class="modalbtn">
+                                <a href="https://calendar.google.com/calendar/u/2/r/eventedit/MmEyZHJxOGdqMTZtcjUxbWtlbXJlbmMxMjAgYXRlbGllcmNyZWF0aXZvc2NAbQ"  
+                                    target="_blank" rel="noopener"><button class="buttonModal">Agenda en Google Calendar</button></a>
+                                <a href="./assets/download/descarga-demo-agendar boda.ics" download="descarga-demo-agendar boda.ics">
+                                    <button class="buttonModal">Descárgalo en tu PC o Mac</button></a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -392,7 +407,7 @@
             <div class="counter__txt">
                 <p>Nos encantaría que puedan ser parte de este 
                     dia tan importante</p>
-                <a href="mailto:direcciondemail@mail.com?Subject=Confirmación%20de%20asistencia&body=%0ANombre y Apellido:%0A%0AConfirmar vuestra asistencia:%0A%0ACantidad de acompañantes:%0A%0AComentarios adicionales:%0A%0A%0A¡Gracias por su respuesta!%0ALos Novios" 
+                <a href="mailto:direcciondemail@mail.com?Subject=Confirmación%20de%20asistencia&body=%0ANombre y Apellido:%0A%0AConfirmar vuestra asistencia:%0A%0ACantidad de acompañantes:%0A%0AComentarios adicionales:%0A%0A%0A¡Gracias por vuestra respuesta!%0ALos Novios" 
                 target="_blank"><button>Confirmar Asistencia</button></a>
             </div>
         </section>
@@ -491,6 +506,9 @@
         <script src="./assets/js/navanimate.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="./assets/js/countdown.js"></script>
+
+        <script src="./assets/js/modal-calendar.js"></script>
+
 
     </body>
 </html>
