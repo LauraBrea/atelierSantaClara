@@ -110,7 +110,9 @@ nav {
     background: #FDFDFD;
     display: flex;
     justify-content: center;
-    z-index: 20; }
+    z-index: 20; 
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0  inset;}
 
 ul {
     list-style: none;
@@ -219,7 +221,7 @@ button:hover {
 
 #we{
     width:100%;
-    height: 100px; 
+    height: 130px; 
     margin: 0;}
 
 .we{
@@ -278,7 +280,7 @@ button:hover {
 
 #location{
     width:100%;
-    height: 100px; 
+    height: 130px; 
     margin: 0;}
 
 .location{
@@ -750,17 +752,21 @@ button:hover {
         padding-bottom: 30px;}    
 
     .item__left{
-        min-height: 200px;
+        min-height: 220px;
         padding-left: 20px; }
 
+        .item__left p{
+            padding-top: 40px;}
+
     .item__right{
-        min-height: 200px; }
+        min-height: 220px; }
         
         .item__right h3{
             right: 20px;}
 
         .item__right p{
-            padding-right: 20px; }
+            padding-right: 20px; 
+            padding-top: 40px;}
         
         .svgR1 {
             right: 20px; }
